@@ -1,13 +1,99 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="this is a website about booch" />
+    <title>the booch website</title>
+    <style>
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 2px;
+        vertical-align: middle;
+        margin-bottom: 5px;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1a1a1a;
+      }
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h3 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h4 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h5 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .username {
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        vertical-align: inherit;
+        margin-bottom: -15px;
+      }
+      .flavor {
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: smaller;
+        vertical-align: middle;
+      }
+      a {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1a1a1a;
+      }
+    </style>
+  </head>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+  <body style="background-color: floralwhite">
+    <header>
+      <nav>
+        <article>
+          <section>
+            <a href="/page1.html">know SCOBY</a>
+          </section>
+          <section>
+            <a href="/page2.html">want a glass of booch?</a>
+          </section>
+          <section>
+            <a href="/page3.html">booch baby</a>
+          </section>
+          <section>
+            <a href="/company/about.html">about this booch</a>
+          </section>
+          <section>
+            <a href="http://lastramelendro.webflow.io" target="_blank">
+              know my brewer</a
+            >
+          </section>
+        </article>
+      </nav>
+    </header>
+
+    <main>
+      <h1>&sext; the booch website &sext;</h1>
+      <br />
+      <img src="/image/herby-scoby.jpg" alt="A beautiful scoby" />
+      <p class="username"><i>herby</i> SCOBY</p>
+      <p class="flavor">rose petals <sup>&</sup> elder flower</p>
+      <br />
+      <br />
+    </main>
+    <footer>
+      <a href="https://www.instagram.com/slastra/">booch brewer social media</a>
+    </footer>
+    <br />
+
+    <!--asi se hace un comentario
+    <p style="color: darkolivegreen" ;font-family:Arial;>
+      una prueba de colores y estilos para la web de la kombucha boocha
+    </p> -->
+  </body>
+</html>
